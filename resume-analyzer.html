@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Analyzer - CampusHire AI</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="dashboard-navbar">
+
+        <div class="logo">
+            CampusHire <span>AI</span>
+        </div>
+
+        <div class="dashboard-user">
+
+            <span id="studentName">
+                Student
+            </span>
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         RESUME ANALYZER
+    ========================== -->
+
+    <main class="resume-analyzer-container">
+
+
+        <!-- Page Header -->
+
+        <div class="resume-header">
+
+            <h1>
+                Resume Analyzer
+            </h1>
+
+            <p>
+                Upload your resume and get personalized
+                feedback to improve your profile.
+            </p>
+
+        </div>
+
+
+
+        <!-- Upload Section -->
+
+        <div class="resume-upload-card">
+
+
+            <div class="upload-icon">
+                📄
+            </div>
+
+
+            <h2>
+                Upload Your Resume
+            </h2>
+
+
+            <p>
+                Upload your latest resume to analyze
+                your skills and profile.
+            </p>
+
+
+            <label
+                for="resumeFile"
+                class="choose-file-btn">
+
+                Choose Resume
+
+            </label>
+
+
+            <input
+                type="file"
+                id="resumeFile"
+                accept=".pdf,.doc,.docx"
+                hidden
+            >
+
+
+            <p
+                id="fileName"
+                class="selected-file">
+
+                No file selected
+
+            </p>
+
+
+            <small>
+                Supported formats: PDF, DOC, DOCX
+            </small>
+
+
+        </div>
+
+
+
+        <!-- Analyze Button -->
+
+        <div class="analyze-button-container">
+
+            <button
+                id="analyzeResumeBtn"
+                class="analyze-resume-btn">
+
+                Analyze Resume
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Result Section -->
+
+        <div
+            id="resumeResults"
+            class="resume-results"
+            style="display: none;">
+
+
+            <div class="results-header">
+
+                <h2>
+                    Resume Analysis
+                </h2>
+
+                <p>
+                    Here's an overview of your resume.
+                </p>
+
+            </div>
+
+
+
+            <!-- Score -->
+
+            <div class="resume-score-card">
+
+                <div>
+
+                    <h3>
+                        Resume Score
+                    </h3>
+
+                    <p>
+                        Based on your resume content
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="resumeScore"
+                    class="resume-score">
+
+                    0%
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Analysis Grid -->
+
+            <div class="resume-analysis-grid">
+
+
+                <!-- Skills -->
+
+                <div class="analysis-card">
+
+                    <h3>
+                        Skills Found
+                    </h3>
+
+                    <div
+                        id="skillsFound"
+                        class="analysis-content">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Missing Skills -->
+
+                <div class="analysis-card">
+
+                    <h3>
+                        Missing Skills
+                    </h3>
+
+                    <div
+                        id="missingSkills"
+                        class="analysis-content">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Strengths -->
+
+                <div class="analysis-card">
+
+                    <h3>
+                        Strengths
+                    </h3>
+
+                    <div
+                        id="resumeStrengths"
+                        class="analysis-content">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Improvements -->
+
+                <div class="analysis-card">
+
+                    <h3>
+                        Improvements
+                    </h3>
+
+                    <div
+                        id="resumeImprovements"
+                        class="analysis-content">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ATS Keywords -->
+
+            <div class="ats-card">
+
+                <h3>
+                    ATS Keywords
+                </h3>
+
+                <div
+                    id="atsKeywords"
+                    class="ats-keywords">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

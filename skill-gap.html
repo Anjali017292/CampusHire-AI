@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Gap | CampusHire AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="dashboard-navbar">
+
+        <div class="logo">
+            Campus<span>Hire</span> AI
+        </div>
+
+        <div class="student-info">
+
+            <span id="studentName">
+                Student
+            </span>
+
+            <div class="student-avatar">
+                👤
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         SKILL GAP CONTAINER
+    ========================== -->
+
+    <main class="skill-gap-container">
+
+
+        <!-- Page Header -->
+
+        <div class="skill-gap-header">
+
+            <p class="dashboard-label">
+                SKILL DEVELOPMENT
+            </p>
+
+            <h1>
+                Skill Gap Analysis
+            </h1>
+
+            <p>
+                Identify the skills you have and the skills
+                you need to improve for your target job role.
+            </p>
+
+        </div>
+
+
+
+        <!-- Target Role -->
+
+        <div class="skill-role-card">
+
+            <h2>
+                Select Your Target Role
+            </h2>
+
+            <select id="targetRole">
+
+                <option value="">
+                    Select Job Role
+                </option>
+
+                <option value="Web Developer">
+                    Web Developer
+                </option>
+
+                <option value="Frontend Developer">
+                    Frontend Developer
+                </option>
+
+                <option value="Python Developer">
+                    Python Developer
+                </option>
+
+                <option value="Java Developer">
+                    Java Developer
+                </option>
+
+                <option value="Data Analyst">
+                    Data Analyst
+                </option>
+
+            </select>
+
+
+            <button id="analyzeSkillsBtn">
+                Analyze Skill Gap
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             RESULTS
+        ========================== -->
+
+        <div
+            id="skillGapResults"
+            class="skill-gap-results"
+            style="display: none;">
+
+
+            <!-- Skill Match -->
+
+            <div class="skill-match-card">
+
+                <div>
+
+                    <p class="card-label">
+                        SKILL MATCH
+                    </p>
+
+                    <h2>
+                        Your Skill Match
+                    </h2>
+
+                    <p>
+                        Based on your current skills and
+                        selected target role.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="skillMatchPercentage"
+                    class="skill-match-percentage">
+
+                    0%
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Skills Grid -->
+
+            <div class="skills-grid">
+
+
+                <!-- Current Skills -->
+
+                <div class="skill-card">
+
+                    <h2>
+                        ✅ Your Skills
+                    </h2>
+
+                    <div
+                        id="currentSkills"
+                        class="skill-list">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Missing Skills -->
+
+                <div class="skill-card">
+
+                    <h2>
+                        📚 Skills to Learn
+                    </h2>
+
+                    <div
+                        id="missingSkills"
+                        class="skill-list">
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Learning Suggestions -->
+
+            <div class="learning-card">
+
+                <p class="card-label">
+                    RECOMMENDATION
+                </p>
+
+                <h2>
+                    Recommended Learning
+                </h2>
+
+                <p id="learningMessage">
+                    Select a target role to see
+                    recommended skills.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

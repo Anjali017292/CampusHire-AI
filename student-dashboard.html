@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | CampusHire AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Dashboard Navbar -->
+
+    <header class="dashboard-navbar">
+
+        <div class="logo">
+            Campus<span>Hire</span> AI
+        </div>
+
+        <div class="student-info">
+
+            <span id="studentName">
+                Student
+            </span>
+
+            <div class="student-avatar">
+                👤
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Dashboard Layout -->
+
+    <div class="dashboard-container">
+
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <a href="#" class="sidebar-link active">
+                🏠 Dashboard
+            </a>
+
+            <a href="profile.html" class="sidebar-link">
+                👤 My Profile
+            </a>
+
+            <a href="jobs.html" class="sidebar-link">
+                💼 Jobs
+            </a>
+
+            <a href="my_application.html" class="sidebar-link">
+                📋 My Applications
+            </a>
+
+            <a href="resume-analyzer.html" class="sidebar-link">
+                📄 Resume Analyzer
+            </a>
+
+            <a href="skill-gap.html" class="sidebar-link">
+                🎯 Skill Gap
+            </a>
+
+            <a href="ai-interview.html" class="sidebar-link">
+                🤖 AI Interview
+            </a>
+
+            <div class="sidebar-bottom">
+
+                <a href="#" class="sidebar-link">
+                    ⚙️ Settings
+                </a>
+
+                <a href="index.html"
+                   class="sidebar-link logout">
+                    🚪 Logout
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Dashboard -->
+
+        <main class="dashboard-main">
+
+
+            <!-- Welcome -->
+
+            <div class="dashboard-heading">
+
+                <div>
+
+                    <p class="dashboard-label">
+                        STUDENT DASHBOARD
+                    </p>
+
+                    <h1>
+                        Welcome back,
+                        <span id="welcomeName">
+                            Student
+                        </span>! 👋
+                    </h1>
+
+                    <p>
+                        Track your placement journey and
+                        discover new opportunities.
+                    </p>
+
+                </div>
+
+                <a href="profile.html" class="profile-btn">
+                Complete Profile
+                </a>
+
+            </div>
+
+
+            <!-- Statistics -->
+
+            <div class="stats-container">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        💼
+                    </div>
+
+                    <div>
+                        <p>
+                            Job Applied
+                        </p>
+                        <h2 id="totalJobsApplied">0</h2>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        📋
+                    </div>
+
+                    <div>
+                        
+                        <p>
+                            Shortlisted
+                        </p>
+
+                        <h2 id="shortlistedApplications">0</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        🎯
+                    </div>
+
+                    <div>
+                        <p>
+                            Interview
+                        </p>
+
+                        <h2 id="interviewApplications">0</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        🤖
+                    </div>
+
+                    <div>
+
+                        <p>
+                            AI Match
+                        </p>
+
+                        <h2>
+                            86%
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dashboard Grid -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- AI Recommendation -->
+
+                <section class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <p class="card-label">
+                                AI RECOMMENDATION
+                            </p>
+
+                            <h2>
+                                Recommended Jobs
+                            </h2>
+
+                        </div>
+
+                        <a href="#">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="job-item">
+
+                        <div class="company-logo">
+                            T
+                        </div>
+
+                        <div class="job-details">
+
+                            <h3>
+                                Frontend Developer
+                            </h3>
+
+                            <p>
+                                TCS • Noida
+                            </p>
+
+                            <span>
+                                JavaScript • HTML • CSS
+                            </span>
+
+                        </div>
+
+                        <div class="match">
+
+                            <strong>
+                                92%
+                            </strong>
+
+                            <small>
+                                AI Match
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-item">
+
+                        <div class="company-logo">
+                            I
+                        </div>
+
+                        <div class="job-details">
+
+                            <h3>
+                                Web Developer
+                            </h3>
+
+                            <p>
+                                Infosys • Pune
+                            </p>
+
+                            <span>
+                                HTML • CSS • PHP
+                            </span>
+
+                        </div>
+
+                        <div class="match">
+
+                            <strong>
+                                87%
+                            </strong>
+
+                            <small>
+                                AI Match
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-item">
+
+                        <div class="company-logo">
+                            W
+                        </div>
+
+                        <div class="job-details">
+
+                            <h3>
+                                Junior Developer
+                            </h3>
+
+                            <p>
+                                Wipro • Gurugram
+                            </p>
+
+                            <span>
+                                JavaScript • MySQL
+                            </span>
+
+                        </div>
+
+                        <div class="match">
+
+                            <strong>
+                                81%
+                            </strong>
+
+                            <small>
+                                AI Match
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- Profile Completion -->
+
+                <section class="dashboard-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <p class="card-label">
+                                YOUR PROFILE
+                            </p>
+
+                            <h2>
+                                Profile Completion
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-progress">
+
+                        <div class="progress-circle">
+
+                            <strong>
+                                75%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <p class="profile-message">
+                        Complete your profile to get
+                        better AI job recommendations.
+                    </p>
+
+
+                    <button class="profile-btn full">
+                        Complete Profile
+                    </button>
+
+                </section>
+
+            </div>
+
+
+            <!-- Applications -->
+
+            <section class="dashboard-card applications-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <p class="card-label">
+                            APPLICATIONS
+                        </p>
+
+                        <h2>
+                            Recent Applications
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="application-row">
+
+                    <div>
+
+                        <strong>
+                            Software Developer
+                        </strong>
+
+                        <p>
+                            Accenture • Applied 2 days ago
+                        </p>
+
+                    </div>
+
+                    <span class="status interview">
+                        Interview
+                    </span>
+
+                </div>
+
+
+                <div class="application-row">
+
+                    <div>
+
+                        <strong>
+                            Web Developer
+                        </strong>
+
+                        <p>
+                            Infosys • Applied 5 days ago
+                        </p>
+
+                    </div>
+
+                    <span class="status shortlisted">
+                        Shortlisted
+                    </span>
+
+                </div>
+
+
+                <div class="application-row">
+
+                    <div>
+
+                        <strong>
+                            Junior Developer
+                        </strong>
+
+                        <p>
+                            Wipro • Applied 1 week ago
+                        </p>
+
+                    </div>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

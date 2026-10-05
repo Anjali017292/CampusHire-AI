@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs - CampusHire AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="dashboard-navbar">
+
+        <div class="logo">
+            CampusHire <span>AI</span>
+        </div>
+
+        <div class="dashboard-user">
+            <span id="studentName">Student</span>
+            <a href="student-dashboard.html">Dashboard</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Main Container -->
+    <div class="jobs-container">
+
+        <div class="jobs-header">
+
+            <div>
+                <h1>Available Jobs</h1>
+                <p>Find placement opportunities that match your skills.</p>
+            </div>
+
+        </div>
+
+
+        <!-- Search & Filters -->
+        <div class="job-filters">
+
+            <input
+                type="text"
+                id="searchJob"
+                placeholder="🔍 Search job or company..."
+            >
+
+            <select id="locationFilter">
+                <option value="">All Locations</option>
+                <option value="Noida">Noida</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Gurugram">Gurugram</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Pune">Pune</option>
+            </select>
+
+
+            <select id="roleFilter">
+                <option value="">All Job Roles</option>
+                <option value="Web Developer">Web Developer</option>
+                <option value="Python Developer">Python Developer</option>
+                <option value="Java Developer">Java Developer</option>
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+            </select>
+
+        </div>
+
+
+        <!-- Jobs List -->
+        <div id="jobsList" class="jobs-list">
+
+            <!-- Jobs will come from JavaScript -->
+
+        </div>
+
+    </div>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

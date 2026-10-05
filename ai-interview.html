@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Interview | CampusHire AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="dashboard-navbar">
+
+        <div class="logo">
+            Campus<span>Hire</span> AI
+        </div>
+
+        <div class="student-info">
+
+            <span id="studentName">
+                Student
+            </span>
+
+            <div class="student-avatar">
+                👤
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         AI INTERVIEW
+    ========================== -->
+
+    <main class="ai-interview-container">
+
+
+        <!-- Header -->
+
+        <div class="ai-interview-header">
+
+            <p class="dashboard-label">
+                AI INTERVIEW
+            </p>
+
+            <h1>
+                Practice Interview
+            </h1>
+
+            <p>
+                Prepare for your placement interview with
+                role-based interview questions.
+            </p>
+
+        </div>
+
+
+
+        <!-- Interview Setup -->
+
+        <div
+            id="interviewSetup"
+            class="interview-setup-card">
+
+            <div class="interview-icon">
+                🤖
+            </div>
+
+            <h2>
+                Start Your Interview
+            </h2>
+
+            <p>
+                Select the job role you want to practice for.
+            </p>
+
+
+            <select id="interviewRole">
+
+                <option value="">
+                    Select Job Role
+                </option>
+
+                <option value="Web Developer">
+                    Web Developer
+                </option>
+
+                <option value="Frontend Developer">
+                    Frontend Developer
+                </option>
+
+                <option value="Python Developer">
+                    Python Developer
+                </option>
+
+                <option value="Java Developer">
+                    Java Developer
+                </option>
+
+                <option value="Data Analyst">
+                    Data Analyst
+                </option>
+
+            </select>
+
+
+            <button id="startInterviewBtn">
+                Start Interview
+            </button>
+
+        </div>
+
+
+
+        <!-- Interview Section -->
+
+        <div
+            id="interviewSection"
+            class="interview-section"
+            style="display: none;">
+
+
+            <div class="interview-top">
+
+                <span id="questionNumber">
+                    Question 1 of 5
+                </span>
+
+                <span>
+                    Practice Interview
+                </span>
+
+            </div>
+
+
+            <!-- Question -->
+
+            <div class="question-card">
+
+                <p class="question-label">
+                    INTERVIEW QUESTION
+                </p>
+
+                <h2 id="interviewQuestion">
+                    Question will appear here
+                </h2>
+
+            </div>
+
+
+            <!-- Answer -->
+
+            <div class="answer-card">
+
+                <label for="interviewAnswer">
+                    Your Answer
+                </label>
+
+                <textarea
+                    id="interviewAnswer"
+                    rows="7"
+                    placeholder="Type your answer here...">
+                </textarea>
+
+
+                <button id="nextQuestionBtn">
+                    Next Question
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Result -->
+
+        <div
+            id="interviewResult"
+            class="interview-result"
+            style="display: none;">
+
+            <div class="result-icon">
+                🎉
+            </div>
+
+            <h2>
+                Interview Completed!
+            </h2>
+
+            <p>
+                Your practice interview has been completed.
+            </p>
+
+            <div class="interview-score">
+
+                <span>
+                    Interview Score
+                </span>
+
+                <strong id="interviewScore">
+                    0%
+                </strong>
+
+            </div>
+
+            <button
+                onclick="location.reload()">
+
+                Practice Again
+
+            </button>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
